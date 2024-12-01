@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Layout</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #e6e6e6;
+    padding: 10px;
+}
+.resume-layout-wrapper{
+    margin: auto;
+    max-width: 790px;
+    width: 100%;
+}
+.name{
+    font-weight: 800;
+    text-align: center;
+}
+.nav-list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    background-color: hsl(219, 20%, 65%);
+}
+
+
+.career-objective {
+    display: block;
+    padding: 20px;
+    background-color: #6b3301;
+    margin-top: 10px;
+}
+
+.profile-pic {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.objective-content {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 153px);
+    padding: 20px;
+    background-color: white;
+    margin-left: 40px;
+}
+
+.career-objective-text {
+    margin-bottom: 30px;
+}
+
+
+.work-experience {
+    background-color: #a40aa4;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.work-experience-text {
+    text-align: center;
+}
+
+.experience-container {
+    text-align: center;
+    white-space: nowrap; /* Ensures items stay on the same line */
+    margin-top: 20px;
+}
+
+.company {
+    display: inline-block;
+    width: calc(50% - 40px); /* Adjusted width for two items side-by-side */
+    margin: 10px 20px; /* Added horizontal and vertical margins */
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    vertical-align: top;
+    white-space: normal; /* Reset text wrapping inside the block */
+}
+
+.company-name {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.projects {
+    background-color: #4169e1;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.projects-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    text-align: center; /* Aligns all projects horizontally */
+    white-space: nowrap; /* Prevents line breaks between inline-block elements */
+}
+
+.project {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33% - 40px); /* Ensures three projects fit in one row */
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+
+    text-align: left;
+    white-space: normal; /* Resets the text wrapping inside the projects */
+}
+
+.album-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.album-wrapper {
+   margin-left:30px
+}
+
+.project-title-text {
+    margin: 6px;
+    font-size: 26px;
+}
+
+.education-skills {
+    text-align: center;
+    white-space: nowrap; /* Prevents the sections from wrapping onto the next line */
+    background-color: #dfdcdf;
+
+}
+
+.education, .skills {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 20px); /* Ensures both education and skills take up half the space */
+    margin: 0px 10px; /* Adds some horizontal spacing between them */
+    text-align: center;
+}
+.education h2{
+    margin-bottom: 25px;
+}
+.skills h2{
+    margin-bottom: 25px;
+}
+
+.education-list {
+    border-bottom: 1px solid whitesmoke;
+    background-color: #6b3301;
+    color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+
+.blogs {
+    background-color: #f0e68c;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.blogs-text {
+    text-align: center;
+}
+
+.blogs-cont {
+    display: block; /* Stack the blogs vertically */
+}
+
+.blog {
+    display: inline-block; /* Allow horizontal layout for blog entries */
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    vertical-align: top; /* Align blogs to the top */
+    width: 100%;
+    background-color: #fff;
+}
+
+.blog img {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    vertical-align: middle; /* Align image with the text */
+}
+
+.blog p {
+    display: inline-block;
+    margin-left: 20px; /* Space between image and text */
+    vertical-align: middle; /* Align text to the middle relative to the image */
+    width: calc(100% - 90px); /* Ensure text does not overflow */
+    margin-top: 0; /* Remove extra margin on top */
+}
+
+
+.social-media-icons {
+    text-align: center; /* Center align the social media icons */
+}
+
+.social-media-icons a {
+    display: inline-block; /* Place the icons horizontally */
+    margin: 2px 10px; /* Space between the icons */
+    text-decoration: none;
+    color: black;
+    padding: 29px;
+}
+
+.social-media {
+    height: 30px;
+    width: 30px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #00619e;
+    margin-top: 6px;
+    
+}
+
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="resume-layout-wrapper">
+
+    
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#objective">Objective</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#education">Skills</a></li>
+                    <li><a href="#blogs">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="objective" class="career-objective">
+            <div class="profile-pic">
+                <img src="./assets/profile-icon.png" alt="Profile Picture">
+                <div class="name">BOMMA PREETHAM</div>
+            </div>
+            <div class="objective-content">
+                <h2 class="career-objective-text">Career Objective:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        
+
+        <section id="experience" class="work-experience">
+            <h2 class="work-experience-text">Work Experience</h2>
+            <div class="experience-container">
+                <div class="company">
+                    <h3 class="company-name">Company1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="company">
+                    <h3 class="company-name">Company2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="projects" class="projects">
+            <h2 class="projects-text">Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="album-wrapper">
+                        <img src="./assets/album.png" class="album-icon" alt="Project Image">
+                    </div>
+                    <h3 class="project-title-text">Project1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="project">
+                    <div class="album-wrapper">
+                        <img src="./assets/album.png" class="album-icon" alt="Project Image">
+                    </div>
+                    <h3 class="project-title-text">Project2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="project">
+                    <div class="album-wrapper">
+                        <img src="./assets/album.png" class="album-icon" alt="Project Image">
+                    </div>
+                    <h3 class="project-title-text">Project3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="education" class="education-skills">
+            <div class="education">
+                <h2>Education</h2>
+                <p class="education-list">B.tech</p>
+                <p class="education-list">M.tech</p>
+                <p class="education-list">PhD</p>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <p class="education-list">Python</p>
+                <p class="education-list">JAVA</p>
+                <p class="education-list">React</p>
+            </div>
+        </section>
+        
+        <section id="blogs" class="blogs">
+            <h2 class="blogs-text">Blogs</h2>
+            <div class="blogs-cont">
+                <div class="blog">
+                    <img src="./assets/album.png" class="blog-image" alt="Blog Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="blog">
+                    <img src="./assets/album.png" class="blog-image" alt="Blog Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer id="contact">
+            <h2>Contact</h2>
+            <div class="social-media-icons">
+                <a href="#"><img class="social-media" src="./assets/instagram.png" alt="Instagram"></a>
+                <a href="#"><img class="social-media" src="./assets/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img class="social-media" src="./assets/github.webp" alt="GitHub"></a>
+                <a href="#"><img class="social-media" src="./assets/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </footer>
+        
+</div>
+</body>
+</html>

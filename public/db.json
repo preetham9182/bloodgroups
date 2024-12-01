@@ -1,0 +1,60 @@
+{
+    "bloodGroups": [
+      {
+        "blood_group": "A+",
+        "donor": "A+, AB+",
+        "recipient": "A+, A-, O+, O-",
+        "personality": "Earnest, creative, sensible, reserved, patient, and responsible",
+        "percentage_people_in_world": "30%"
+      },
+      {
+        "blood_group": "O+",
+        "donor": "O+, A+, B+, AB+",
+        "recipient": "O+, O-",
+        "personality": "Confident, self-determined, strong-willed, and intuitive",
+        "percentage_people_in_world": "35%"
+      },
+      {
+        "blood_group": "B+",
+        "donor": "B+, AB+",
+        "recipient": "B+, B-, O+, O-",
+        "personality": "Passionate, active nature, creative, and strong",
+        "percentage_people_in_world": "8%"
+      },
+      {
+        "blood_group": "AB+",
+        "donor": "AB+",
+        "recipient": "Everyone",
+        "personality": "Cool, controlled, rational, and adaptable",
+        "percentage_people_in_world": "2%"
+      },
+      {
+        "blood_group": "A-",
+        "donor": "A+, A-, AB+, AB-",
+        "recipient": "A-, O-",
+        "personality": "Earnest, creative, sensible, reserved, patient, and responsible",
+        "percentage_people_in_world": "8%"
+      },
+      {
+        "blood_group": "O-",
+        "donor": "Everyone",
+        "recipient": "O-",
+        "personality": "Confident, self-determined, strong-willed, and intuitive",
+        "percentage_people_in_world": "13%"
+      },
+      {
+        "blood_group": "B-",
+        "donor": "B+, B-, AB+, AB-",
+        "recipient": "B-, O-",
+        "personality": "Passionate, active nature, creative, and strong",
+        "percentage_people_in_world": "2%"
+      },
+      {
+        "blood_group": "AB-",
+        "donor": "AB+, AB-",
+        "recipient": "AB-, A-, B-, O-",
+        "personality": "Cool, controlled, rational, and adaptable",
+        "percentage_people_in_world": "1%"
+      }
+    ]
+  }
